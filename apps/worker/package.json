@@ -1,0 +1,16 @@
+{
+  "name": "@repo/worker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "build":"tsc"
+  },
+  "dependencies": {
+    "@repo/queue": "workspace:*",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}
